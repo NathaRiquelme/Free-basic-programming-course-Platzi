@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: #023047;
+}
+
+#select_your_pet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #ffb703;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 32px;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 160px;
+  height: 20px;
+  background-color: rgba(142, 202, 230, 0.8);
+  z-index: -1;
+}
+
+.subtitle {
+  color: #fb8500;
+  background-color: #023047;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.cards,
+.attack_cards {
+  display: flex;
+  gap: 0px;
+}
+
+.mokepon_card {
+  width: 156px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #8ecae6;
+  border: 1px solid #219ebc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mokepon_card img {
+  width: 70px;
+}
+
+#button_select_pet {
+  width: 136px;
+  height: 52px;
+  border-radius: 20px;
+  border: 1px dashed #219ebc;
+  margin-top: 10px;
+  background-color: #ffb703;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #ffb703;
+}
+
+#select_your_attack {
+  flex-direction: column;
+  align-items: center;
+}
+
+.attack_button {
+  width: 82px;
+  height: 42px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #8ecae6;
+  border: 1px solid #219ebc;
+  border-radius: 20px;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+#messages {
+  width: 136px;
+  border-radius: 20px;
+  border: 1px dashed #219ebc;
+  margin: 5px;
+  background-color: #ffb703;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #219ebc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button_restart {
+  border: none;
+  background-color: #ffb703;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+}
+
+#players_lives,
+#enemys_lives {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.player_summary,
+.enemy_summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#see_the_map {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#see_the_map button {
+  width: 136px;
+  height: 48px;
+  border-radius: 20px;
+  border: 1px dashed #219ebc;
+  margin-top: 5px;
+  background-color: #ffb703;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+@media (max-width: 360px) {
+  .cards,
+  .attack_cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  #see_the_map div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
